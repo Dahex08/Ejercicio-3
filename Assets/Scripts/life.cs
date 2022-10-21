@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class life : MonoBehaviour
 {
-    public float vida;
+    public float vida=10;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class life : MonoBehaviour
     {
         if (vida <= 0)
         {
-            Debug.Log("");
+            Debug.Log("dead");
         }
     }
 }
