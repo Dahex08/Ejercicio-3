@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class DañoEnemigo : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int damage;
+    public GameObject Player;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if(other.tag== "Player")
+		{
+            Player.GetComponent<life>().vida -= damage;
+		}
     }
 }
