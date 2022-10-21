@@ -19,6 +19,7 @@ public class life : MonoBehaviour
         if (vida <= 0)
         {
             Debug.Log("dead");
+            derrota.show ();
         }
     }
 }
