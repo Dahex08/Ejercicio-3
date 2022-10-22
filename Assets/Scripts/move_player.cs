@@ -22,11 +22,5 @@ public class move_player : MonoBehaviour
         rb.AddForce(vector * force * Time.deltaTime);
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "player") ;
-        {
-            SceneManager.LoadScene("2");
-        }
-    }
+    
 }

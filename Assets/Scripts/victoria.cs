@@ -5,10 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class victoria : MonoBehaviour
 {
+    public int numeroEscena;
+ 
     private void OnTriggerEnter(Collider other)
 
     {
-        SceneManager.LoadScene(1);
+        if (other.tag == "Player")
+
+        {
+            SceneManager.LoadScene(numeroEscena);
+        }
     }
+
+
+
+
 }
-    
